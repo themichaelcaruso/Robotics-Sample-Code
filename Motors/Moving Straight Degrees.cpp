@@ -9,7 +9,7 @@ int main(){
     //Make the robot drive straight for 720 degrees (2 rotations)
     mtrLeft.spin(directionType::fwd, 100, percentUnits::pct);
     mtrRight.spin(directionType::fwd, 100, percentUnits::pct);//Set each motor to 100% power forwards
-    while (mtrLeft.rotation(rotationUnits.deg) < 720){}//wait until the left motor has gone 720 degrees
+    while (mtrLeft.rotation(rotationUnits::deg) < 720){}//wait until the left motor has gone 720 degrees
     mtrLeft.stop();
     mtrRight.stop();//Stop both motors (They are still spinning)
 }
