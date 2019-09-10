@@ -1,4 +1,4 @@
-//This program is for making the robot do a point turn with a two motor drive
+//This program is for making the robot do a swing turn with a two motor drive
 using namespace vex;//Reference the vex class
 
 //Create the motor objects for the left and right motors
