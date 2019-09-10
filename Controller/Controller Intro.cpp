@@ -8,8 +8,7 @@ ctr.ButtonA.pressing() //This returns true or false for whether Button A is bein
 //Each Button on the controller is labeled
 
 //Using Joysticks:
-ctr.Axis1.position(positionUnits::pct) //This returns an integer value for the position of the 1 Axis on the controller
-//In the middle, the position is 0
+ctr.Axis1.position(positionUnits::pct) //This returns an integer value for the position of the 1 Axis on the controller from -100 to 100
   
 //Using the LCD:
 //You can print three lines of text to the controller screen, similar to the brain screen.
