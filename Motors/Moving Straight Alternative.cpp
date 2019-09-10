@@ -13,6 +13,7 @@ int main(){
     mtrLeft.startRotateTo(720, rotationUnits::deg, 100, percentUnits::pct); //Make the left motor move to 720 degrees
     mtrRight.startRotateTo(720, rotationUnits::deg, 100, percentUnits::pct); //Make the right motor move to 720 degrees
     //The startRotateTo command will move to 720 degrees and then holds position
+    //The startRotateTo command can be used to make multiple motors spin to different distances (The left motor goes to one position while the right motor goes to the other)
     while (!mtrLeft.spinning() && !mtrRight.spinning()){
         task::sleep(25);//Check every 25 milliseconds
     }//wait until both motors have stopped
