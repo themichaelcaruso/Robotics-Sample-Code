@@ -6,11 +6,12 @@ brain Brain;
 pot potFoo = pot(Brain.ThreeWirePort.A);//Create the potentiometer object on three wire port A
 int main() {
     while (true){
-        //Print the gyro's value to the brain screen
         Brain.Screen.clearScreen();
         Brain.Screen.setCursor(1,1);
         Brain.Screen.print("%d\n", potFoo.value(percentUnits::pct));//Measure as a percentage
+        Brain.Screen.newLine();
         Brain.Screen.print("%d\n", potFoo.value(rotationUnits::deg));//Measure as an angle
+        Brain.Screen.newLine();
         Brain.Screen.print("%d", potFoo.value(analogUnits::mV));//Measure in millivolts
         task::sleep(10);
     }
