@@ -10,7 +10,7 @@ int main() {
         Brain.Screen.setCursor(1,1);
         Brain.Screen.print("%d\n", potFoo.value(percentUnits::pct));//Measure as a percentage
         Brain.Screen.newLine();
-        Brain.Screen.print("%d\n", potFoo.value(rotationUnits::deg));//Measure as an angle
+        Brain.Screen.print("%d\n", potFoo.value(rotationUnits::deg));//Measure as an angle * currently doesn't work
         Brain.Screen.newLine();
         Brain.Screen.print("%d", potFoo.value(analogUnits::mV));//Measure in millivolts
         task::sleep(10);
