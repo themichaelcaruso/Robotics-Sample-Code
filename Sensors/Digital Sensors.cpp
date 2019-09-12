@@ -11,8 +11,10 @@ int main() {
     while (true){
         Brain.Screen.clearScreen();
         Brain.Screen.setCursor(1,1);
-        Brain.Screen.print("%b\n", bumpFoo.pressing());//Print whether the bumper switch is pressed
-        Brain.Screen.print("%b\n", limitFoo.pressing());//Print whether the limit switch is pressed
+        Brain.Screen.print("%d", bumpFoo.pressing()?1:0);//Print whether the bumper switch is pressed
+        Brain.Screen.newLine();
+        Brain.Screen.print("%d", limitFoo.pressing()?1:0);//Print whether the limit switch is pressed
+        Brain.Screen.newLine();
         Brain.Screen.print("%d", digitalFoo.value());//Print whether the digital input is 0 or 1
         task::sleep(10);
     }
