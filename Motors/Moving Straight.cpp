@@ -4,6 +4,6 @@
     Sets both motors to rotate for 1 second
 */
 int main() {
-    M1.rotateFor(1,timeUnits::sec);
+    M1.startRotateFor(1,timeUnits::sec);
     M2.rotateFor(1,timeUnits::sec);
 }
